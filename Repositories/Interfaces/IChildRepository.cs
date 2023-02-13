@@ -1,0 +1,19 @@
+﻿using Repositories.Entities;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Repositories.Interfaces
+{
+    public interface IChildRepository
+    {
+        List<Child> GettAll();
+        Child GetById(int id);
+        Child Add(Child model);
+        void Update(Child model);
+        void Delete(Child model);
+        void Search(Child model);
+    }
+}
